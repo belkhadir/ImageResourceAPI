@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4986A8532C0B3D1700EC285E /* ImageResourceAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8522C0B3D1700EC285E /* ImageResourceAPI.docc */; };
-		4986A8542C0B3D1700EC285E /* ImageResourceAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4986A8512C0B3D1700EC285E /* ImageResourceAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4986A84E2C0B3D1700EC285E /* ImageResourceAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageResourceAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4986A8512C0B3D1700EC285E /* ImageResourceAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageResourceAPI.h; sourceTree = "<group>"; };
 		4986A8522C0B3D1700EC285E /* ImageResourceAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ImageResourceAPI.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +45,6 @@
 		4986A8502C0B3D1700EC285E /* ImageResourceAPI */ = {
 			isa = PBXGroup;
 			children = (
-				4986A8512C0B3D1700EC285E /* ImageResourceAPI.h */,
 				4986A8522C0B3D1700EC285E /* ImageResourceAPI.docc */,
 			);
 			path = ImageResourceAPI;
@@ -60,7 +57,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4986A8542C0B3D1700EC285E /* ImageResourceAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +262,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -306,7 +302,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
