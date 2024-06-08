@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
     var imageStyle: ImageStyling {
         get { self[ImageStyleKey.self] }
         set { self[ImageStyleKey.self] = newValue }
