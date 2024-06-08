@@ -5,7 +5,7 @@
 //  Created by Belkhadir Anas on 8/6/2024.
 //
 
-import Foundation
+import SwiftUI
 
 public protocol ImageStyling {
     var frame: CGSize { get }
