@@ -10,6 +10,11 @@
 		4986A8532C0B3D1700EC285E /* ImageResourceAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8522C0B3D1700EC285E /* ImageResourceAPI.docc */; };
 		4986A85B2C0B3E4D00EC285E /* ImageResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A85A2C0B3E4D00EC285E /* ImageResourceService.swift */; };
 		4986A85D2C0B3E6600EC285E /* ImageProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A85C2C0B3E6600EC285E /* ImageProviding.swift */; };
+		4986A8E52C14756400EC285E /* ImageResourceServiceProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8E42C14756400EC285E /* ImageResourceServiceProviding.swift */; };
+		4986A8E72C1476EC00EC285E /* ImageStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8E62C1476EC00EC285E /* ImageStyling.swift */; };
+		4986A8EA2C14781F00EC285E /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8E92C14781F00EC285E /* Extension+View.swift */; };
+		4986A8EC2C14783400EC285E /* Extension+EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8EB2C14783400EC285E /* Extension+EnvironmentValues.swift */; };
+		4986A8EE2C14788200EC285E /* ImageStyleKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986A8ED2C14788200EC285E /* ImageStyleKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +22,11 @@
 		4986A8522C0B3D1700EC285E /* ImageResourceAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ImageResourceAPI.docc; sourceTree = "<group>"; };
 		4986A85A2C0B3E4D00EC285E /* ImageResourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceService.swift; sourceTree = "<group>"; };
 		4986A85C2C0B3E6600EC285E /* ImageProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviding.swift; sourceTree = "<group>"; };
+		4986A8E42C14756400EC285E /* ImageResourceServiceProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResourceServiceProviding.swift; sourceTree = "<group>"; };
+		4986A8E62C1476EC00EC285E /* ImageStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyling.swift; sourceTree = "<group>"; };
+		4986A8E92C14781F00EC285E /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		4986A8EB2C14783400EC285E /* Extension+EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+EnvironmentValues.swift"; sourceTree = "<group>"; };
+		4986A8ED2C14788200EC285E /* ImageStyleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyleKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,21 @@
 				4986A8522C0B3D1700EC285E /* ImageResourceAPI.docc */,
 				4986A85C2C0B3E6600EC285E /* ImageProviding.swift */,
 				4986A85A2C0B3E4D00EC285E /* ImageResourceService.swift */,
+				4986A8E42C14756400EC285E /* ImageResourceServiceProviding.swift */,
+				4986A8ED2C14788200EC285E /* ImageStyleKey.swift */,
+				4986A8E62C1476EC00EC285E /* ImageStyling.swift */,
+				4986A8E82C14781300EC285E /* Extension */,
 			);
 			path = ImageResourceAPI;
+			sourceTree = "<group>";
+		};
+		4986A8E82C14781300EC285E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4986A8EB2C14783400EC285E /* Extension+EnvironmentValues.swift */,
+				4986A8E92C14781F00EC285E /* Extension+View.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4986A8E72C1476EC00EC285E /* ImageStyling.swift in Sources */,
+				4986A8EC2C14783400EC285E /* Extension+EnvironmentValues.swift in Sources */,
+				4986A8E52C14756400EC285E /* ImageResourceServiceProviding.swift in Sources */,
+				4986A8EE2C14788200EC285E /* ImageStyleKey.swift in Sources */,
 				4986A8532C0B3D1700EC285E /* ImageResourceAPI.docc in Sources */,
 				4986A85B2C0B3E4D00EC285E /* ImageResourceService.swift in Sources */,
+				4986A8EA2C14781F00EC285E /* Extension+View.swift in Sources */,
 				4986A85D2C0B3E6600EC285E /* ImageProviding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +308,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -289,7 +317,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -323,7 +351,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -332,7 +360,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
